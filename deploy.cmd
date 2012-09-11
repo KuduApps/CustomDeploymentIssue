@@ -1,2 +1,5 @@
 @ECHO off
-xcopy c:\foo c:\bar /E /Y 
+SET SourceDir=%CD%
+SET TempDir=C:\TEMP_SOURCE
+xcopy %SourceDir% %TempDir% /E /Y
+
